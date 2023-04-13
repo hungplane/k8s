@@ -1,5 +1,8 @@
 node {
     def app
+    environment {
+        PATH = "$PATH:/usr/bin/docker"
+    }
 
     stage('Clone repository') {
       
